@@ -1,0 +1,76 @@
+/* General styling */
+
+.page-wrapper {
+    padding: 15px;
+    font-size: 120%;
+    font-family: Helvetica;
+    background-color: darkseagreen;
+
+    display: grid;
+
+    grid-template-areas:
+        "header header"
+        "main sidebar"
+        "footer footer";
+
+    grid-template-columns: 3fr 1fr;
+    height: 100%;
+
+}
+
+/* Main sections styling */
+
+.intro {
+    grid-area: header;
+    text-align: center;
+}
+
+.main-supporting {
+    grid-area: main;
+    margin: 0 10px 10px 0; 
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: honeydew;
+    padding: 15px;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* More specific styling */
+
+.summary p:last-child {
+    font-size: 70%;
+}
+
+a:hover {
+    color: red;
+}
+
+a:visited {
+    color: rebeccapurple;
+}
+
+.preamble p::first-letter {
+    font-weight: bold;
+    font-size: 120%;
+}
+
+.summary p:not(:last-child)::before,
+.summary p:not(:last-child)::after {
+    content: "\1F44D";
+}
+
+.sidebar li {
+    list-style-type: circle;
+}
+
+
+
+
+
+
+
